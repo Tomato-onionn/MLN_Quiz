@@ -104,6 +104,46 @@ body {
   align-items: center;
 }
 
+/* Clickable overlay for milestones */
+.milestone-click-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  background: transparent;
+}
+
+.milestone-click-area.unlocked {
+  cursor: pointer;
+}
+
+.milestone-click-area.locked {
+  cursor: default;
+  /* do not force not-allowed */
+  background: linear-gradient(rgba(212, 175, 55, 0.02), rgba(212, 175, 55, 0.01));
+}
+
+.lock-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  color: #d4af37;
+  /* gold */
+  background: rgba(0, 0, 0, 0.03);
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.lock-icon path {
+  fill: currentColor;
+}
+
 .milestone.left {
   justify-content: flex-end;
   padding-right: calc(50% + 60px);
@@ -197,6 +237,72 @@ body {
   letter-spacing: 3px;
   font-weight: 300;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Quiz modal styles */
+.quiz-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+}
+
+.quiz-modal {
+  width: min(720px, 92%);
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  border: 2px solid rgba(212, 175, 55, 0.25);
+}
+
+.quiz-modal-title {
+  margin-bottom: 12px;
+  color: #2c2c2c;
+  font-family: 'Georgia', serif;
+}
+
+.quiz-question {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.quiz-option {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.06), rgba(212, 175, 55, 0.03));
+  cursor: pointer;
+  text-align: left;
+}
+
+.quiz-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.quiz-close {
+  background: transparent;
+  border: none;
+  color: #444;
+  cursor: pointer;
 }
 
 /* Responsive Design */
