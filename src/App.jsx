@@ -10,6 +10,8 @@ function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [consecutiveCorrect, setConsecutiveCorrect] = useState(0);
   const [unlockedIndex, setUnlockedIndex] = useState(0); // which milestone index is unlocked (0-based)
+  // track which milestones have been completed (answered fully correct)
+  const [completedSet, setCompletedSet] = useState(new Set());
 
   useEffect(() => {
     const handleScroll = () => {
@@ -186,6 +188,12 @@ function App() {
         if (unlockedIndex < milestones.length - 1) {
           setUnlockedIndex((i) => i + 1);
         }
+        // mark this milestone as completed so its content appears
+        setCompletedSet((s) => {
+          const n = new Set(s);
+          n.add(activeMilestoneIndex);
+          return n;
+        });
         closeQuiz();
       }
     } else {
@@ -195,6 +203,8 @@ function App() {
       setScrollProgress(0);
       // also lock back to first milestone
       setUnlockedIndex(0);
+      // clear completed set as penalty (optional: reset progress)
+      setCompletedSet(new Set());
     }
   };
 
@@ -231,13 +241,19 @@ function App() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
-                <div className="milestone-content">
-                  <span className="milestone-year">{milestone.year}</span>
-                  <h3 className="milestone-title">{milestone.title}</h3>
-                  <p className="milestone-description">
-                    {milestone.description}
-                  </p>
-                </div>
+                {/* show content only after the milestone is completed */}
+                {completedSet.has(milestones.length - 1 - index) ? (
+                  <div className="milestone-content">
+                    <span className="milestone-year">{milestone.year}</span>
+                    <h3 className="milestone-title">{milestone.title}</h3>
+                    <p className="milestone-description">
+                      {milestone.description}
+                    </p>
+                  </div>
+                ) : (
+                  // hidden until completed
+                  <div className="milestone-content hidden" aria-hidden />
+                )}
                 {/* clickable overlay to open quiz (only if unlocked) */}
                 <div
                   className={`milestone-click-area ${
