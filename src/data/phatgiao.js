@@ -1,166 +1,141 @@
 export const phatGiaoData = [
   {
     id: 1,
-    title: "Phật giáo trong đổi mới và hội nhập",
+    title: "Phật giáo",
     year: "Giai đoạn 1986 – nay",
-    description: `Từ Đổi mới (1986), Phật giáo phát triển mạnh mẽ trong đời sống xã hội:
-
-Hoạt động nổi bật:
-
-Xây dựng, trùng tu hàng ngàn chùa, tự viện trên cả nước.
-
-Mở rộng đào tạo tăng tài: Thành lập các học viện Phật giáo tại Hà Nội, Huế, TP.HCM, Cần Thơ.
-
-Tăng cường hợp tác quốc tế: Tổ chức Đại lễ Vesak LHQ (2008, 2014, 2019).
-
-Tham gia các hoạt động xã hội, từ thiện, giáo dục, y tế, bảo vệ môi trường, an sinh xã hội.`,
+    description: `Sau khi đất nước giành được độc lập và thống nhất năm 1975, Việt Nam bước vào thời kỳ quá độ lên chủ nghĩa xã hội. Trong giai đoạn này, Phật giáo – một trong những tôn giáo có ảnh hưởng sâu rộng nhất trong đời sống tinh thần của nhân dân – đã có nhiều chuyển biến quan trọng cả về tổ chức, hoạt động và tư tưởng, phù hợp với đường lối phát triển của đất nước.`,
     questions: [
       {
-        q: "Đại lễ Vesak LHQ lần đầu được tổ chức tại Việt Nam năm nào?",
-        options: ["2008", "2000", "2014"],
-        a: 0,
+        q: "Theo quan điểm của chủ nghĩa Mác - Lênin, tôn giáo là gì?",
+        options: [
+          "Tôn giáo là một thực thể xã hội - các tôn giáo cụ thể",
+          "Tôn giáo là một hiện tượng xã hội - văn hóa do con người sáng tạo ra, thể hiện dưới hình thức những lực lượng siêu trần thể",
+          "Tôn giáo là một hệ thống các giáo điều bất biến",
+          "Tôn giáo là một hình thái kinh tế - xã hội"
+        ],
+        a: 1,
       },
       {
-        q: "Phật giáo đóng góp vào lĩnh vực nào sau Đổi mới?",
-        options: ["Từ thiện, y tế, giáo dục", "Chính trị", "Quân sự"],
-        a: 0,
-      },
-      {
-        q: "Các học viện Phật giáo được thành lập ở đâu?",
-        options: ["Hà Nội, Huế, TP.HCM, Cần Thơ", "Chỉ Hà Nội", "Chỉ TP.HCM"],
-        a: 0,
+        q: "Các tiêu chí cơ bản nào được sử dụng để nhận diện một tôn giáo cụ thể?",
+        options: [
+          "Có niềm tin sâu sắc vào đấng siêu nhiên, có hệ thống cơ sở thờ tự, và có hệ thống tín đồ đông đảo",
+          "Có hệ thống giáo thuyết (giáo lý, giáo luật, lễ nghi), có tổ chức nhân sự, quản lý điều hành việc đạo",
+          "Cả A và B đều đúng",
+          "Chỉ cần có số lượng tín đồ trên 1 triệu người"
+        ],
+        a: 2,
       },
     ],
   },
   {
     id: 2,
-    title: "Thành lập Giáo hội Phật giáo Việt Nam",
+    title: "Thế kỷ XXI: Khẳng định vị thế trên trường quốc tế",
     year: "Cột mốc 1981",
-    description: `Ngày 7/11/1981: Giáo hội Phật giáo Việt Nam (GHPGVN) chính thức được thành lập tại Hà Nội.
-
-Ý nghĩa:
-
-Đánh dấu bước ngoặt lịch sử trong quá trình thống nhất Phật giáo cả nước.
-
-Khẩu hiệu hành động: "Đạo pháp – Dân tộc – Chủ nghĩa xã hội."
-
-Vai trò: Trở thành tổ chức duy nhất đại diện cho Tăng Ni, Phật tử Việt Nam, hoạt động trong khuôn khổ pháp luật và định hướng của Nhà nước XHCN.`,
+    description: `Bước ngoặt đầu tiên là năm 1981, khi Giáo hội Phật giáo Việt Nam (GHPGVN) được thành lập tại Hà Nội. Đây là sự kiện lịch sử mang ý nghĩa to lớn, đánh dấu lần đầu tiên trong lịch sử, Phật giáo Việt Nam có một tổ chức thống nhất, tập hợp chư tăng ni, Phật tử từ Bắc chí Nam trong cùng một ngôi nhà chung, lấy phương châm "Đạo pháp – Dân tộc – Chủ nghĩa xã hội" làm kim chỉ nam cho mọi hoạt động. Sự kiện này thể hiện tinh thần hòa hợp, đoàn kết tôn giáo, phù hợp với định hướng phát triển của đất nước trong thời kỳ quá độ.`,
     questions: [
       {
-        q: "GHPGVN được thành lập ngày nào?",
-        options: ["7/11/1981", "30/4/1975", "2/9/1945"],
-        a: 0,
-      },
-      {
-        q: "Khẩu hiệu hành động của GHPGVN là gì?",
+        q: "Theo các nguồn tài liệu, 'Mê tín' được định nghĩa là gì?",
         options: [
-          "Đạo pháp – Dân tộc – Chủ nghĩa xã hội",
-          "Độc lập – Tự do – Hạnh phúc",
-          "Tự do tín ngưỡng",
+          "Là niềm tin của con người vào các lực lượng siêu nhiên, thần thánh",
+          "Là niềm tin mê muội, viển vông, không dựa trên một cơ sở khoa học nào",
+          "Là hành động một cách tùy tiện, sai lệch những điều bình thường",
+          "Là sự tuyệt đối hóa mặt chủ thể của nhận thức con người"
         ],
-        a: 0,
+        a: 1,
       },
       {
-        q: "GHPGVN được thành lập tại đâu?",
-        options: ["Hà Nội", "Sài Gòn", "Huế"],
+        q: "Mê tín dị đoan được định nghĩa là gì?",
+        options: [
+          "Là niềm tin của con người vào các lực lượng siêu nhiên, thần thánh đến mức độ mê muội, cuồng tín, dẫn đến những hành vi cực đoan, sai lệch quá mức, trái với các giá trị văn hóa, đạo đức, pháp luật, gây tổn hại cho cá nhân, xã hội và cộng đồng",
+          "Là những hành động tùy tiện, sai lệch những điều bình thường",
+          "Là niềm tin hoàn toàn dựa trên cơ sở khoa học",
+          "Là sự tuyệt đối hóa, cường điệu mặt chủ thể của nhận thức con người"
+        ],
         a: 0,
       },
     ],
   },
   {
     id: 3,
-    title: "Thống nhất đất nước, chuẩn bị thống nhất Phật giáo",
+    title: "Những năm 1980–1990: Phật giáo đồng hành cùng công cuộc đổi mới",
     year: "Giai đoạn 1975 – 1981",
-    description: `Sau 1975, đất nước thống nhất, bước vào thời kỳ quá độ lên CNXH trên phạm vi cả nước.
-
-Phật giáo cả nước bắt đầu quá trình thống nhất tổ chức.
-
-Nhiều cuộc họp, hội nghị được tổ chức giữa các tổ chức Phật giáo Bắc – Trung – Nam để hướng tới một Giáo hội chung.`,
+    description: `Bước sang thế kỷ XXI, Phật giáo Việt Nam tiếp tục khẳng định vai trò tích cực trong thời kỳ hội nhập quốc tế. Các đại lễ Phật đản Liên Hiệp Quốc (Vesak) được tổ chức thành công tại Việt Nam các năm 2008, 2014 và 2019, thể hiện vị thế và uy tín của Phật giáo Việt Nam trên trường quốc tế. Giáo hội tiếp tục phát triển mạnh mẽ về tổ chức, mở rộng các cơ sở giáo dục Phật học, và ứng dụng công nghệ vào công tác truyền thông, hoằng pháp.`,
     questions: [
       {
-        q: "Đất nước thống nhất năm nào?",
-        options: ["1975", "1981", "1954"],
-        a: 0,
+        q: "Nguồn gốc tự nhiên, kinh tế - xã hội của tôn giáo bao gồm những yếu tố nào?",
+        options: [
+          "Do lo sợ trước sự thống trị của các lực lượng xã hội",
+          "Do lực lượng sản xuất chưa phát triển, con người cảm thấy yếu đuối và bất lực trước thiên nhiên hùng vĩ",
+          "Do xã hội xuất hiện các giai cấp đối kháng, có áp bức bất công",
+          "Tất cả các yếu tố trên"
+        ],
+        a: 3,
       },
       {
-        q: "Giai đoạn này Phật giáo tập trung làm gì?",
-        options: ["Thống nhất tổ chức", "Kháng chiến", "Xây chùa"],
-        a: 0,
-      },
-      {
-        q: "Các cuộc họp được tổ chức giữa Phật giáo vùng nào?",
-        options: ["Bắc – Trung – Nam", "Chỉ miền Bắc", "Chỉ miền Nam"],
-        a: 0,
+        q: "Nguồn gốc nhận thức của tôn giáo thực chất là gì?",
+        options: [
+          "Sự sợ hãi trước những hiện tượng tự nhiên, xã hội",
+          "Sự tuyệt đối hóa, sự cường điệu mặt chủ thể của nhận thức con người, biến cái nội dung khách quan thành cái siêu nhiên, thần thánh",
+          "Sự trông chờ vào sự giải phóng của một lực lượng siêu nhiên ngoài trần thế",
+          "Tình cảm tích cực như tình yêu, lòng biết ơn"
+        ],
+        a: 1,
       },
     ],
   },
   {
     id: 4,
-    title: "Phật giáo trong hai miền chia cắt",
+    title: "Năm 1981: Thành lập Giáo hội Phật giáo Việt Nam",
     year: "Giai đoạn 1954 – 1975",
-    description: `Miền Bắc (XHCN):
-• Năm 1958: Thành lập Hội Phật giáo Thống nhất Việt Nam ở miền Bắc.
-• Hoạt động: Xây dựng tinh thần "Đạo pháp – Dân tộc – Chủ nghĩa xã hội", tham gia phong trào thi đua yêu nước.
-
-Miền Nam (trước 1975):
-• Phật giáo phát triển mạnh, có phong trào đấu tranh chống Mỹ – Ngụy (phong trào Phật giáo 1963).
-• Khẩu hiệu: "Phật giáo Việt Nam đồng hành cùng dân tộc".`,
+    description: `Trong những năm 1980–1990, Phật giáo tích cực đồng hành cùng công cuộc đổi mới đất nước, chú trọng vào công tác hoằng pháp, xây dựng cơ sở tự viện, mở trường Phật học, và tham gia vào các hoạt động xã hội, từ thiện. Phật giáo Việt Nam không chỉ là một tổ chức tôn giáo, mà còn là một lực lượng góp phần xây dựng đời sống văn hóa, đạo đức, nhân ái trong xã hội mới.`,
     questions: [
       {
-        q: "Hội Phật giáo Thống nhất VN miền Bắc thành lập năm nào?",
-        options: ["1958", "1954", "1975"],
-        a: 0,
-      },
-      {
-        q: "Phong trào Phật giáo năm 1963 diễn ra ở đâu?",
-        options: ["Miền Nam", "Miền Bắc", "Cả nước"],
-        a: 0,
-      },
-      {
-        q: "Phật giáo miền Bắc hoạt động theo tinh thần nào?",
+        q: "Nguồn gốc tâm lý của tôn giáo có thể xuất phát từ yếu tố nào?",
         options: [
-          "Đạo pháp – Dân tộc – CNXH",
-          "Độc lập – Tự do",
-          "Chỉ Đạo pháp",
+          "Sự sợ hãi trước những hiện tượng tự nhiên, xã hội",
+          "Tâm lý muốn được bình yên khi làm một việc lớn",
+          "Cả những tình cảm tích cực như tình yêu, lòng biết ơn, lòng kính trọng đối với những người có công với nước, với dân",
+          "Tất cả các yếu tố trên"
         ],
-        a: 0,
+        a: 3,
+      },
+      {
+        q: "Tính chất lịch sử của tôn giáo được thể hiện như thế nào?",
+        options: [
+          "Tôn giáo sẽ tồn tại vĩnh viễn trong mọi hình thái kinh tế xã hội",
+          "Tôn giáo chỉ là một hiện tượng xã hội nhất thời, xuất hiện trong mọi giai đoạn lịch sử",
+          "Tôn giáo là một hiện tượng xã hội có quá trình hình thành, tồn tại và phát triển trong một giai đoạn lịch sử nào đó, sẽ dần mất đi vị trí khi khoa học và giáo dục phát triển",
+          "Tôn giáo luôn mang tính chính trị sâu sắc ở mọi thời đại"
+        ],
+        a: 2,
       },
     ],
   },
   {
     id: 5,
-    title: "Phật giáo đồng hành cùng kháng chiến",
+    title: "Thời kỳ đầu của quá độ lên chủ nghĩa xã hội",
     year: "Giai đoạn 1945 – 1954",
-    description: `Bối cảnh: Cách mạng Tháng Tám thành công, nước Việt Nam Dân chủ Cộng hòa ra đời.
-
-Hoạt động nổi bật:
-
-Nhiều tăng ni, phật tử tham gia kháng chiến chống Pháp, ủng hộ Chính phủ Hồ Chí Minh.
-
-Hình thành các tổ chức Phật giáo yêu nước ở cả Bắc – Trung – Nam, tiêu biểu như:
-
-Hội Phật giáo Cứu quốc Việt Nam (1946) – tham gia Mặt trận Việt Minh.
-
-Phật giáo trở thành một lực lượng xã hội tích cực trong phong trào yêu nước.`,
+    description: `Trong thời kỳ quá độ lên chủ nghĩa xã hội, Phật giáo Việt Nam luôn gắn bó mật thiết với dân tộc, hướng đến mục tiêu "Tốt đời – đẹp đạo", đồng hành cùng Nhà nước trong việc xây dựng xã hội công bằng, văn minh, giàu lòng nhân ái. Phật giáo không chỉ giữ gìn truyền thống văn hóa, đạo đức dân tộc mà còn góp phần định hướng giá trị tinh thần trong bối cảnh đổi mới và hội nhập toàn cầu.`,
     questions: [
       {
-        q: "Cách mạng Tháng Tám thành công năm nào?",
-        options: ["1945", "1954", "1946"],
-        a: 0,
-      },
-      {
-        q: "Hội Phật giáo Cứu quốc Việt Nam thành lập năm nào?",
-        options: ["1946", "1945", "1950"],
-        a: 0,
-      },
-      {
-        q: "Phật giáo tham gia tổ chức nào trong kháng chiến?",
+        q: "Tính quần chúng của tôn giáo được biểu hiện rõ nét qua điểm nào?",
         options: [
-          "Mặt trận Việt Minh",
-          "Chỉ hoạt động riêng",
-          "Không tham gia",
+          "Tôn giáo chỉ phổ biến ở các nước tư bản phát triển",
+          "Tôn giáo là một hiện tượng xã hội phổ biến ở tất cả các dân tộc, quốc gia, châu lục",
+          "Tôn giáo hướng con người vào niềm tin hạnh phúc hư ảo của thế giới bên kia",
+          "Chỉ A và B"
         ],
-        a: 0,
+        a: 1,
+      },
+      {
+        q: "Theo chủ nghĩa Mác - Lênin, tính chất chính trị của tôn giáo bắt đầu xuất hiện khi nào?",
+        options: [
+          "Khi tôn giáo chỉ phản ánh nhận thức hồn nhiên, ngây thơ của con người",
+          "Khi tôn giáo trở thành sản phẩm của những điều kiện kinh tế - xã hội",
+          "Khi xã hội đã phân chia giai cấp, có sự khác biệt, sự đối kháng về lợi ích giai cấp",
+          "Khi các tổ chức tôn giáo trở nên độc lập hoàn toàn với nhà nước"
+        ],
+        a: 2,
       },
     ],
   },

@@ -1,9 +1,9 @@
 /* Final Page Styles */
 .final-page {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .final-background {
@@ -31,20 +31,21 @@
 .final-content {
     position: relative;
     z-index: 1;
-    min-height: 100vh;
-    padding: 80px 40px;
+    height: 100vh;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .final-title {
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 300;
     color: #d4af37;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
 }
@@ -53,26 +54,26 @@
 .quotes-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
     max-width: 1200px;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .quote-box {
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 12px;
-    padding: 40px;
+    padding: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    min-height: 220px;
+    min-height: 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
     position: relative;
 }
 
@@ -93,8 +94,8 @@
 }
 
 .quote-text {
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
     font-style: italic;
     text-align: left;
@@ -104,8 +105,8 @@
 
 .badge-area {
     flex-shrink: 0;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .drop-zone {
@@ -118,7 +119,7 @@
     border-radius: 8px;
     text-align: center;
     color: rgba(212, 175, 55, 0.6);
-    font-size: 13px;
+    font-size: 11px;
     transition: all 0.3s ease;
     font-weight: 300;
     letter-spacing: 0.5px;
@@ -139,8 +140,8 @@
 }
 
 .matched-badge img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
     animation: fadeInScale 0.5s ease;
     filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.3));
@@ -185,11 +186,11 @@
 /* Badges Container */
 .badges-container {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 900px;
-    padding: 40px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 12px;
@@ -231,16 +232,16 @@
 
 .badge-label {
     color: rgba(212, 175, 55, 0.9);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
 /* Check Button */
 .check-button {
-    margin-top: 60px;
-    padding: 18px 50px;
-    font-size: 18px;
+    margin-top: 20px;
+    padding: 12px 40px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 2px;
     color: rgba(0, 0, 0, 0.9);

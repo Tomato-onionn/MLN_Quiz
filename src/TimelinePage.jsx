@@ -41,7 +41,7 @@ function TimelinePage({
   }, []);
 
   useEffect(() => {
-    if (unlockedIndex > 0) {
+    if (unlockedIndex > 0 && unlockedIndex < milestones.length) {
       setTimeout(() => {
         const milestoneElements = document.querySelectorAll(".milestone");
         const targetIndex = milestones.length - 1 - unlockedIndex;
@@ -64,8 +64,21 @@ function TimelinePage({
     }
   }, [completedSet.size, milestones.length, onComplete]);
 
+  // Scroll to top when all milestones are completed
+  useEffect(() => {
+    if (completedSet.size === milestones.length && completedSet.size > 0) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }, 800);
+    }
+  }, [completedSet.size, milestones.length]);
+
   const openQuizFor = (index) => {
     if (index > unlockedIndex) return;
+    if (completedSet.has(index)) return; // Không cho mở quiz nếu đã hoàn thành
     setActiveMilestoneIndex(index);
     setCurrentQuestionIndex(0);
     setQuizOpen(true);
@@ -98,11 +111,8 @@ function TimelinePage({
         closeQuiz();
       }
     } else {
+      // Trả lời sai: chỉ đóng quiz và làm lại mốc này
       closeQuiz();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      setScrollProgress(0);
-      setUnlockedIndex(0);
-      setCompletedSet(new Set());
     }
   };
 
@@ -185,16 +195,22 @@ function TimelinePage({
                     milestones.length - 1 - index <= unlockedIndex
                       ? "unlocked"
                       : "locked"
+                  } ${
+                    completedSet.has(milestones.length - 1 - index)
+                      ? "completed"
+                      : ""
                   }`}
                   onClick={
-                    milestones.length - 1 - index <= unlockedIndex
+                    milestones.length - 1 - index <= unlockedIndex &&
+                    !completedSet.has(milestones.length - 1 - index)
                       ? () => openQuizFor(milestones.length - 1 - index)
                       : undefined
                   }
                   aria-hidden="true"
                   role="button"
                   aria-disabled={
-                    milestones.length - 1 - index <= unlockedIndex
+                    milestones.length - 1 - index <= unlockedIndex &&
+                    !completedSet.has(milestones.length - 1 - index)
                       ? "false"
                       : "true"
                   }
@@ -228,9 +244,6 @@ function TimelinePage({
       {quizOpen && activeMilestoneIndex !== null && (
         <div className="quiz-modal-overlay" onClick={closeQuiz}>
           <div className="quiz-modal" onClick={(e) => e.stopPropagation()}>
-            <h3 className="quiz-modal-title">
-              {milestones[activeMilestoneIndex].title}
-            </h3>
             <p className="quiz-question">
               {
                 milestones[activeMilestoneIndex].questions[currentQuestionIndex]

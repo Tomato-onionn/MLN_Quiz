@@ -49,7 +49,7 @@ function App() {
             milestones={phatGiaoData}
             bgImage="/PhatGiao.png"
             badgeImage="/1.png"
-            footerText="Namo Amitabha Buddha"
+            footerText="Group 7"
             onComplete={handlePage1Complete}
           />
 
@@ -180,7 +180,7 @@ function App() {
 
           <TimelinePage
             milestones={daoChienData}
-            bgImage="/DaoChien.png"
+            bgImage="/Balamon.png"
             badgeImage=""
             footerText="Peace and Harmony"
             onComplete={handlePage3Complete}
@@ -262,7 +262,7 @@ function App() {
 
           <TimelinePage
             milestones={daoHoaHaoData}
-            bgImage="/DaoHoaHao.png"
+            bgImage="/Hoigiao.png"
             badgeImage=""
             footerText="Bần Tăng Phật Tử"
             onComplete={handlePage4Complete}

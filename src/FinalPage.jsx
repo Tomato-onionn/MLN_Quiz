@@ -156,7 +156,6 @@ function FinalPage() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <img src={badge.src} alt={badge.label} />
-              <span className="badge-label">{badge.label}</span>
             </Motion.div>
           ))}
         </div>
