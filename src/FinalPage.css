@@ -1,0 +1,421 @@
+/* Final Page Styles */
+.final-page {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.final-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.7) 100%);
+    z-index: 0;
+}
+
+.final-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.final-content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.final-title {
+    font-size: 56px;
+    font-weight: 300;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 80px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/* Quotes Container */
+.quotes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.quote-box {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    min-height: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.quote-box:hover {
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+}
+
+.quote-box.has-match {
+    background: rgba(212, 175, 55, 0.1);
+    border: 2px solid rgba(212, 175, 55, 0.6);
+}
+
+.quote-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.quote-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+    text-align: left;
+    font-weight: 300;
+    margin: 0;
+}
+
+.badge-area {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+}
+
+.drop-zone {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(212, 175, 55, 0.4);
+    border-radius: 8px;
+    text-align: center;
+    color: rgba(212, 175, 55, 0.6);
+    font-size: 13px;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.quote-box:hover .drop-zone {
+    border-color: rgba(212, 175, 55, 0.7);
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.matched-badge {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.matched-badge img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    animation: fadeInScale 0.5s ease;
+    filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.3));
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(212, 175, 55, 0.9);
+    color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.remove-btn:hover {
+    background: #d4af37;
+    transform: scale(1.1);
+}
+
+/* Badges Container */
+.badges-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.draggable-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: grab;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.draggable-badge:active {
+    cursor: grabbing;
+}
+
+.draggable-badge.used {
+    opacity: 0.2;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+}
+
+.draggable-badge img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.3));
+    transition: all 0.3s ease;
+}
+
+.draggable-badge:not(.used):hover img {
+    transform: scale(1.1) translateY(-5px);
+    filter: drop-shadow(0 8px 20px rgba(212, 175, 55, 0.5));
+}
+
+.badge-label {
+    color: rgba(212, 175, 55, 0.9);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Check Button */
+.check-button {
+    margin-top: 60px;
+    padding: 18px 50px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(135deg, #d4af37, #c4a661);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
+}
+
+.check-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(212, 175, 55, 0.5);
+}
+
+/* Success Overlay */
+.success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.success-modal {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.9));
+    border: 2px solid rgba(212, 175, 55, 0.5);
+    padding: 80px 60px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.success-modal h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #d4af37;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+}
+
+.success-modal p {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.all-badges {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.all-badges img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.4));
+    animation: floatGold 3s ease-in-out infinite;
+}
+
+.all-badges img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.all-badges img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.all-badges img:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.all-badges img:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes floatGold {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .final-content {
+        padding: 60px 20px;
+    }
+
+    .final-title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .quotes-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .quote-box {
+        padding: 25px;
+        min-height: 160px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quote-content {
+        width: 100%;
+    }
+
+    .quote-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .badge-area {
+        width: 100px;
+        height: 100px;
+    }
+
+    .drop-zone {
+        font-size: 12px;
+    }
+
+    .matched-badge img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .badges-container {
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .draggable-badge img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .success-modal {
+        padding: 50px 30px;
+        margin: 20px;
+    }
+
+    .success-modal h2 {
+        font-size: 36px;
+    }
+
+    .success-modal p {
+        font-size: 18px;
+    }
+
+    .all-badges img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .check-button {
+        padding: 15px 40px;
+        font-size: 16px;
+    }
+}
