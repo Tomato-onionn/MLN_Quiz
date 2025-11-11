@@ -91,6 +91,7 @@ function FinalPage() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          style={{ fontWeight: "bold" }}
         >
           Ghép Câu Trích Dẫn
         </Motion.h1>
