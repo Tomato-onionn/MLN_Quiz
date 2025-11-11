@@ -8,42 +8,34 @@ function FinalPage() {
     quote1: null,
     quote2: null,
     quote3: null,
-    quote4: null,
   });
   const [showSuccess, setShowSuccess] = useState(false);
 
   const quotes = [
     {
       id: "quote1",
-      text: "Phật pháp là kim chỉ nam dẫn đường cho cuộc sống an lạc",
-      correctBadge: "badge1",
-      religion: "Phật giáo",
+      text: "Sự nghèo nàn của tôn giáo vừa là biểu hiện của sự nghèo nàn hiện thực, vừa là sự phản kháng chống sự nghèo nàn hiện thực ấy. Tôn giáo là tiếng thở dài của chúng sinh bị áp bức, là trái tim của thế giới không có trái tim, cũng như nó là tinh thần của những trật tự không có tinh thần. Tôn giáo là thuốc phiện của nhân dân",
+      correctBadge: "badge2",
+      religion: "Trích dẫn 1",
     },
     {
       id: "quote2",
-      text: "Hãy yêu người lân cận như chính mình",
-      correctBadge: "badge2",
-      religion: "Công giáo",
+      text: "Những lời tuyên chiến ầm ĩ với chủ nghĩa duy tâm, những mệnh lệnh ngăn cấm tín ngưỡng, tôn giáo là những hành vi dại dột, vô chính phủ, làm cho kẻ thù lợi dụng để kích động tình cảm tôn giáo của tín đồ, làm cho họ ngày càng gắn bó với tôn giáo, xa lánh thậm chí đi đến chống lại công cuộc xây dựng chủ nghĩa xã hội. Đương nhiên, như vậy không có nghĩa là coi nhẹ việc giáo dục chủ nghĩa vô thần khoa học, thế giới quan duy vật cho toàn dân, trong đó có những tín đồ tôn giáo, việc làm đó góp phần nâng cao trình độ kiến thức cho toàn dân",
+      correctBadge: "badge1",
+      religion: "Trích dẫn 2",
     },
     {
       id: "quote3",
-      text: "Đạo là lẽ phải, cần tu tâm dưỡng tính",
+      text: "Tín ngưỡng, tôn giáo là nhu cầu của một bộ phận nhân dân, Đảng và Nhà nước ta tôn trọng quyền tự do tín ngưỡng và không tín ngưỡng của nhân dân, thực hiện bình đẳng, đoàn kết lương giáo và giữa các dân tộc. Khắc phục mọi thái độ hẹp hòi, thành kiến, phân biệt đối xử với đồng bào có đạo, chống những hành vi vi phạm tự do tín ngưỡng",
       correctBadge: "badge3",
-      religion: "Đạo Chiên",
-    },
-    {
-      id: "quote4",
-      text: "Bần Tăng Phật Tử, tu hành gắn liền với lao động sản xuất",
-      correctBadge: "badge4",
-      religion: "Đạo Hòa Hảo",
+      religion: "Trích dẫn 3",
     },
   ];
 
   const badges = [
-    { id: "badge1", src: "/1.png", label: "Phật giáo" },
-    { id: "badge2", src: "/2.png", label: "Công giáo" },
-    { id: "badge3", src: "/3.png", label: "Đạo Chiên" },
-    { id: "badge4", src: "/4.png", label: "Đạo Hòa Hảo" },
+    { id: "badge1", src: "/2.png", label: "Badge 2" },
+    { id: "badge2", src: "/1.png", label: "Badge 1" },
+    { id: "badge3", src: "/3.png", label: "Badge 3" },
   ];
 
   const handleDragStart = (badgeId) => {

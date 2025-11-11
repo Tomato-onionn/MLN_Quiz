@@ -1,9 +1,9 @@
 export const phatGiaoData = [
   {
     id: 1,
-    title: "Phật giáo",
+    title: "Phật giáo sau năm 1975",
     year: "Giai đoạn 1986 – nay",
-    description: `Sau khi đất nước giành được độc lập và thống nhất năm 1975, Việt Nam bước vào thời kỳ quá độ lên chủ nghĩa xã hội. Trong giai đoạn này, Phật giáo – một trong những tôn giáo có ảnh hưởng sâu rộng nhất trong đời sống tinh thần của nhân dân – đã có nhiều chuyển biến quan trọng cả về tổ chức, hoạt động và tư tưởng, phù hợp với đường lối phát triển của đất nước.`,
+    description: `Sau khi đất nước thống nhất, nhu cầu hợp nhất các tổ chức Phật giáo trở nên cấp thiết. Ngày 7/11/1981, Giáo hội Phật giáo Việt Nam được thành lập tại chùa Quán Sứ (Hà Nội), đánh dấu lần đầu tiên Phật giáo cả nước có một tổ chức chung, thống nhất ý chí và hành động.`,
     questions: [
       {
         q: "Theo quan điểm của chủ nghĩa Mác - Lênin, tôn giáo là gì?",
@@ -29,9 +29,9 @@ export const phatGiaoData = [
   },
   {
     id: 2,
-    title: "Thế kỷ XXI: Khẳng định vị thế trên trường quốc tế",
+    title: "Công cuộc đổi mới",
     year: "Cột mốc 1981",
-    description: `Bước ngoặt đầu tiên là năm 1981, khi Giáo hội Phật giáo Việt Nam (GHPGVN) được thành lập tại Hà Nội. Đây là sự kiện lịch sử mang ý nghĩa to lớn, đánh dấu lần đầu tiên trong lịch sử, Phật giáo Việt Nam có một tổ chức thống nhất, tập hợp chư tăng ni, Phật tử từ Bắc chí Nam trong cùng một ngôi nhà chung, lấy phương châm "Đạo pháp – Dân tộc – Chủ nghĩa xã hội" làm kim chỉ nam cho mọi hoạt động. Sự kiện này thể hiện tinh thần hòa hợp, đoàn kết tôn giáo, phù hợp với định hướng phát triển của đất nước trong thời kỳ quá độ.`,
+    description: `Phật giáo Việt Nam hoạt động theo phương châm “Đạo pháp – Dân tộc – Chủ nghĩa xã hội”, tích cực tham gia giáo dục, từ thiện và xây dựng đời sống văn hóa. Nhiều cơ sở tự viện và học viện được mở rộng, góp phần lan tỏa tinh thần nhân ái, hòa hợp trong xã hội mới.`,
     questions: [
       {
         q: "Theo các nguồn tài liệu, 'Mê tín' được định nghĩa là gì?",
@@ -57,9 +57,9 @@ export const phatGiaoData = [
   },
   {
     id: 3,
-    title: "Những năm 1980–1990: Phật giáo đồng hành cùng công cuộc đổi mới",
+    title: "Hội nhập và phát triển quốc tế",
     year: "Giai đoạn 1975 – 1981",
-    description: `Bước sang thế kỷ XXI, Phật giáo Việt Nam tiếp tục khẳng định vai trò tích cực trong thời kỳ hội nhập quốc tế. Các đại lễ Phật đản Liên Hiệp Quốc (Vesak) được tổ chức thành công tại Việt Nam các năm 2008, 2014 và 2019, thể hiện vị thế và uy tín của Phật giáo Việt Nam trên trường quốc tế. Giáo hội tiếp tục phát triển mạnh mẽ về tổ chức, mở rộng các cơ sở giáo dục Phật học, và ứng dụng công nghệ vào công tác truyền thông, hoằng pháp.`,
+    description: `Bước vào thời kỳ hội nhập, Phật giáo Việt Nam khẳng định vị thế trên trường quốc tế qua ba kỳ Đại lễ Vesak Liên Hiệp Quốc (2008, 2014, 2019). GHPGVN tiếp tục phát huy truyền thống nhập thế, gắn bó cùng dân tộc, hướng đến mục tiêu “Tốt đời – đẹp đạo”.`,
     questions: [
       {
         q: "Nguồn gốc tự nhiên, kinh tế - xã hội của tôn giáo bao gồm những yếu tố nào?",
@@ -85,9 +85,10 @@ export const phatGiaoData = [
   },
   {
     id: 4,
-    title: "Năm 1981: Thành lập Giáo hội Phật giáo Việt Nam",
+    title: "Khái niệm và Bản chất của tôn giáo",
     year: "Giai đoạn 1954 – 1975",
-    description: `Trong những năm 1980–1990, Phật giáo tích cực đồng hành cùng công cuộc đổi mới đất nước, chú trọng vào công tác hoằng pháp, xây dựng cơ sở tự viện, mở trường Phật học, và tham gia vào các hoạt động xã hội, từ thiện. Phật giáo Việt Nam không chỉ là một tổ chức tôn giáo, mà còn là một lực lượng góp phần xây dựng đời sống văn hóa, đạo đức, nhân ái trong xã hội mới.`,
+    color: "#48c9b0", // Màu xanh dương sáng
+    description: `Tôn giáo là một hình thái ý thức xã hội phản ánh hư ảo hiện thực khách quan, trong đó các lực lượng ở trần thế mang hình thức những lực lượng siêu trần thể. Tôn giáo mang thế giới quan duy tâm và xuất hiện từ nhiều nguồn gốc như sự yếu đuối trước tự nhiên, áp bức xã hội, giới hạn nhận thức, và nhu cầu tâm lý. Cần phân biệt tôn giáo với mê tín dị đoan—niềm tin mê muội, cuồng tín, dẫn đến hành vi cực đoan, trái pháp luật, gây tổn hại xã hội`,
     questions: [
       {
         q: "Nguồn gốc tâm lý của tôn giáo có thể xuất phát từ yếu tố nào?",
@@ -113,9 +114,10 @@ export const phatGiaoData = [
   },
   {
     id: 5,
-    title: "Thời kỳ đầu của quá độ lên chủ nghĩa xã hội",
+    title: "Tính chất của Tôn giáo",
     year: "Giai đoạn 1945 – 1954",
-    description: `Trong thời kỳ quá độ lên chủ nghĩa xã hội, Phật giáo Việt Nam luôn gắn bó mật thiết với dân tộc, hướng đến mục tiêu "Tốt đời – đẹp đạo", đồng hành cùng Nhà nước trong việc xây dựng xã hội công bằng, văn minh, giàu lòng nhân ái. Phật giáo không chỉ giữ gìn truyền thống văn hóa, đạo đức dân tộc mà còn góp phần định hướng giá trị tinh thần trong bối cảnh đổi mới và hội nhập toàn cầu.`,
+    color: "#48c9b0", // Màu xanh dương sáng
+    description: `Tôn giáo có tính lịch sử, sẽ dần mất đi vị trí khi khoa học và giáo dục phát triển; tính quần chúng do là hiện tượng phổ biến, là nơi sinh hoạt văn hóa, tinh thần của bộ phận đông đảo nhân dân; và tính chính trị, chỉ xuất hiện khi xã hội phân chia giai cấp, tôn giáo bị các thế lực lợi dụng để phục vụ lợi ích chính trị`,
     questions: [
       {
         q: "Tính quần chúng của tôn giáo được biểu hiện rõ nét qua điểm nào?",

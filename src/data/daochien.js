@@ -1,152 +1,143 @@
 export const daoChienData = [
   {
     id: 1,
-    title: "Đạo Chiên trong thời kỳ đổi mới",
+    title: "Nguồn gốc và phân bố",
     year: "Giai đoạn 1986 – nay",
-    description: `Từ Đổi mới (1986), Đạo Chiên phát triển trong bối cảnh hội nhập:
-
-Hoạt động nổi bật:
-
-Xây dựng và phát triển các cơ sở thờ tự.
-
-Tăng cường các hoạt động từ thiện, giáo dục.
-
-Tham gia tích cực vào đời sống xã hội và văn hóa.
-
-Bảo tồn và phát triển các giá trị tín ngưỡng truyền thống.`,
+    description: `Bà-la-môn giáo ở Việt Nam chủ yếu do người Chăm Bàlamôn thực hành, tập trung tại Ninh Thuận và Bình Thuận. Đây là tôn giáo có nguồn gốc từ Ấn Độ, du nhập vào Việt Nam từ thời vương quốc Champa cổ (thế kỷ IV–XV).`,
     questions: [
       {
-        q: "Đạo Chiên tham gia tích cực vào lĩnh vực nào?",
-        options: ["Từ thiện và giáo dục", "Quân sự", "Chính trị"],
-        a: 0,
+        q: "Nhìn chung, xu hướng nào đang phát triển trong hàng ngũ chức sắc các tôn giáo ở Việt Nam hiện nay?",
+        options: [
+          "Xu hướng bảo thủ, duy trì tập quán lạc hậu.",
+          "Xu hướng tiến bộ.",
+          "Xu hướng đòi ly khai dân tộc.",
+          "Xu hướng tuyệt đối hóa vai trò của tôn giáo."
+        ],
+        a: 1,
       },
       {
-        q: "Từ năm 1986, Đạo Chiên phát triển trong bối cảnh nào?",
-        options: ["Hội nhập", "Chiến tranh", "Đóng cửa"],
-        a: 0,
-      },
-      {
-        q: "Đạo Chiên tập trung vào việc gì?",
-        options: ["Bảo tồn giá trị truyền thống", "Chỉ tôn giáo", "Không hoạt động"],
-        a: 0,
+        q: "Chính sách nào sau đây được Đảng và Nhà nước Việt Nam thực hiện nhất quán đối với tôn giáo?",
+        options: [
+          "Thực hiện chính sách tôn giáo bằng các biện pháp hành chính.",
+          "Thực hiện nhất quán chính sách tôn trọng và bảo đảm quyền tự do tín ngưỡng, theo hoặc không theo một tín ngưỡng, tôn giáo nào, quyền sinh hoạt tín ngưỡng, tôn giáo bình thường theo đúng pháp luật.",
+          "Ngăn cấm mọi hình thức truyền đạo.",
+          "Chỉ công nhận các tôn giáo nội sinh."
+        ],
+        a: 1,
       },
     ],
   },
   {
     id: 2,
-    title: "Tổ chức và phát triển Đạo Chiên",
+    title: "Đặc điểm tín ngưỡng và văn hóa",
     year: "Cột mốc 1980",
-    description: `Năm 1980: Đạo Chiên được tổ chức và phát triển.
-
-Ý nghĩa:
-
-Đánh dấu bước phát triển mới của tín ngưỡng.
-
-Tăng cường sự đoàn kết trong cộng đồng.
-
-Vai trò: Định hướng hoạt động tín ngưỡng phù hợp với pháp luật.`,
+    description: `Người Chăm Bàlamôn thờ các thần Ấn Độ như Shiva, Vishnu và Brahma, đồng thời kết hợp với tín ngưỡng bản địa, tạo nên tôn giáo mang đậm bản sắc Việt – Chăm. Di tích thánh địa Mỹ Sơn là minh chứng tiêu biểu cho ảnh hưởng của Bà-la-môn giáo tại Việt Nam.`,
     questions: [
       {
-        q: "Đạo Chiên được tổ chức phát triển năm nào?",
-        options: ["1980", "1975", "1986"],
-        a: 0,
+        q: "Chính sách đại đoàn kết dân tộc của Đảng và Nhà nước Việt Nam về tôn giáo bao gồm nội dung nào?",
+        options: [
+          "Đoàn kết đồng bào theo các tôn giáo khác nhau.",
+          "Đoàn kết đồng bào theo tôn giáo và đồng bào không theo tôn giáo.",
+          "Nghiêm cấm mọi hành vi chia rẽ, phân biệt đối xử với công dân vì lý do tín ngưỡng, tôn giáo.",
+          "Tất cả các nội dung trên."
+        ],
+        a: 3,
       },
       {
-        q: "Vai trò của tổ chức là gì?",
-        options: ["Định hướng hoạt động tín ngưỡng", "Quản lý chính trị", "Không có vai trò"],
-        a: 0,
-      },
-      {
-        q: "Tổ chức giúp tăng cường điều gì?",
-        options: ["Sự đoàn kết cộng đồng", "Sự chia rẽ", "Không ảnh hưởng"],
-        a: 0,
+        q: "Nhà nước nghiêm cấm những hành vi lợi dụng tín ngưỡng, tôn giáo nào?",
+        options: [
+          "Hoạt động mê tín dị đoan.",
+          "Hoạt động trái pháp luật và chính sách của Nhà nước.",
+          "Kích động chia rẽ nhân dân, chia rẽ các dân tộc, gây rối, xâm phạm an ninh quốc gia.",
+          "Tất cả các hành vi trên."
+        ],
+        a: 3,
       },
     ],
   },
   {
     id: 3,
-    title: "Đạo Chiên sau thống nhất đất nước",
+    title: "Hiện trạng và pháp lý",
     year: "Giai đoạn 1975 – 1980",
-    description: `Sau 1975, Đạo Chiên điều chỉnh hoạt động:
-
-Duy trì sinh hoạt tín ngưỡng trong cộng đồng.
-
-Thích nghi với bối cảnh mới của đất nước thống nhất.
-
-Xây dựng mối quan hệ với Nhà nước và các tôn giáo khác.`,
+    description: `Hiện nay, hai tổ chức Chăm Bàlamôn ở Ninh Thuận và Bình Thuận đã được Nhà nước Việt Nam công nhận (từ năm 2012). Cộng đồng này có khoảng hơn 60.000 tín đồ, sinh hoạt tôn giáo ổn định và được bảo đảm quyền tự do tín ngưỡng theo pháp luật.`,
     questions: [
       {
-        q: "Sau 1975, Đạo Chiên có tiếp tục hoạt động không?",
-        options: ["Có, vẫn duy trì", "Không, bị cấm hoàn toàn", "Chỉ ở nước ngoài"],
-        a: 0,
+        q: "Nội dung cốt lõi của công tác tôn giáo là gì?",
+        options: [
+          "Công tác quản lý nhà nước đối với các tôn giáo.",
+          "Công tác đấu tranh chống lại các thế lực thù địch lợi dụng tôn giáo.",
+          "Công tác vận động quần chúng.",
+          "Công tác củng cố và kiện toàn tổ chức bộ máy chuyên trách làm công tác tôn giáo."
+        ],
+        a: 2,
       },
       {
-        q: "Đạo Chiên làm gì sau thống nhất?",
-        options: ["Thích nghi với bối cảnh mới", "Ngừng hoạt động", "Chỉ hoạt động bí mật"],
-        a: 0,
-      },
-      {
-        q: "Đạo Chiên xây dựng mối quan hệ với ai?",
-        options: ["Nhà nước và các tôn giáo khác", "Chỉ nội bộ", "Không ai"],
-        a: 0,
+        q: "Theo các nguồn tài liệu, công tác tôn giáo là trách nhiệm của ai?",
+        options: [
+          "Chỉ của tổ chức Đảng và Chính quyền địa phương.",
+          "Chỉ của Mặt trận Tổ quốc và các đoàn thể chính trị.",
+          "Là trách nhiệm của toàn bộ hệ thống chính trị, bao gồm hệ thống tổ chức Đảng, chính quyền, Mặt trận Tổ quốc, đoàn thể chính trị do Đảng lãnh đạo.",
+          "Chỉ của chức sắc, chức việc các tôn giáo."
+        ],
+        a: 2,
       },
     ],
   },
   {
     id: 4,
-    title: "Đạo Chiên trong hai miền chia cắt",
+    title: "Chính sách Tôn giáo của Việt Nam",
     year: "Giai đoạn 1954 – 1975",
-    description: `Giai đoạn đất nước chia cắt:
-
-Miền Bắc: Hoạt động trong điều kiện hạn chế.
-
-Miền Nam: Phát triển và duy trì các hoạt động tín ngưỡng.
-
-Cả hai miền đều giữ gìn bản sắc văn hóa tín ngưỡng.`,
+    color: "#48c9b0", // Màu xanh ngọc (turquoise)
+    description: `Đảng và Nhà nước Việt Nam thực hiện nhất quán chính sách tôn trọng và bảo đảm quyền tự do tín ngưỡng, quyền sinh hoạt tôn giáo bình thường theo pháp luật. Chính sách đại đoàn kết dân tộc được thực hiện nhất quán (đoàn kết đồng bào theo tôn giáo và không theo tôn giáo). Nghiêm cấm mọi hành vi lợi dụng tín ngưỡng, tôn giáo để hoạt động mê tín dị đoan, trái pháp luật, kích động chia rẽ dân tộc, xâm phạm an ninh quốc gia`,
     questions: [
       {
-        q: "Đạo Chiên miền Nam phát triển như thế nào?",
-        options: ["Phát triển và duy trì", "Suy yếu", "Không hoạt động"],
-        a: 0,
+        q: "Việc theo đạo, truyền đạo cũng như mọi hoạt động tôn giáo khác phải tuân thủ yêu cầu gì?",
+        options: [
+          "Phải được Chính phủ đồng ý.",
+          "Phải tuân thủ Hiến pháp và pháp luật.",
+          "Không được lợi dụng tôn giáo để tuyên truyền tà đạo, hoạt động mê tín dị đoan.",
+          "Cả B và C."
+        ],
+        a: 3,
       },
       {
-        q: "Điều gì được giữ gìn ở cả hai miền?",
-        options: ["Bản sắc văn hóa tín ngưỡng", "Không gì cả", "Chỉ lễ nghi"],
-        a: 0,
-      },
-      {
-        q: "Tình hình Đạo Chiên miền Bắc như thế nào?",
-        options: ["Hoạt động hạn chế", "Phát triển mạnh", "Bị cấm hoàn toàn"],
+        q: "Nguyên tắc giải quyết mối quan hệ dân tộc và tôn giáo phải tuân thủ điều gì có tính nguyên tắc?",
+        options: [
+          "Tuyệt đối không được lợi dụng vấn đề tôn giáo đòi ly khai dân tộc, hay chia rẽ khối đại đoàn kết dân tộc làm tổn hại đến lợi ích quốc gia - dân tộc.",
+          "Đảm bảo quyền tự do tín ngưỡng bằng mọi giá.",
+          "Chỉ quan tâm đến vấn đề tôn giáo mà thôi.",
+          "Áp dụng các biện pháp hành chính để giải quyết xung đột."
+        ],
         a: 0,
       },
     ],
   },
   {
     id: 5,
-    title: "Đạo Chiên trong kháng chiến",
+    title: " Công tác Tôn giáo và Quản lý Nhà nước",
     year: "Giai đoạn 1945 – 1954",
-    description: `Giai đoạn kháng chiến chống Pháp:
-
-Nhiều tín đồ tham gia ủng hộ kháng chiến.
-
-Duy trì sinh hoạt tín ngưỡng trong điều kiện khó khăn.
-
-Đóng góp vào phong trào giải phóng dân tộc.`,
+    color: "#48c9b0", // Màu xanh ngọc (turquoise)
+    description: `Nội dung cốt lõi của công tác tôn giáo là công tác vận động quần chúng, nhằm nâng cao trình độ, đời sống và nhận thức đúng đắn về đường lối chính sách. Công tác tôn giáo là trách nhiệm của cả hệ thống chính trị (Đảng, chính quyền, Mặt trận Tổ quốc, đoàn thể). Mọi hoạt động tôn giáo, bao gồm việc theo đạo và truyền đạo, phải tuân thủ Hiến pháp và pháp luật.`,
     questions: [
       {
-        q: "Tín đồ Đạo Chiên làm gì trong kháng chiến?",
-        options: ["Tham gia ủng hộ kháng chiến", "Không tham gia", "Chống lại"],
-        a: 0,
+        q: "Luật Tín ngưỡng, tôn giáo năm 2016 quy định nội dung nào về khối đại đoàn kết toàn dân tộc?",
+        options: [
+          "Bảo đảm quyền tự do tín ngưỡng, tôn giáo của mọi công dân.",
+          "Tập hợp đồng bào theo tín ngưỡng, tôn giáo và đồng bào không theo tín ngưỡng, tôn giáo xây dựng khối đại đoàn kết toàn dân tộc, xây dựng và bảo vệ Tổ quốc.",
+          "Chỉ những tôn giáo được Nhà nước thừa nhận mới được phép hoạt động.",
+          "Đẩy mạnh đấu tranh chống lợi dụng tôn giáo."
+        ],
+        a: 1,
       },
       {
-        q: "Đạo Chiên có duy trì sinh hoạt trong kháng chiến không?",
-        options: ["Có, trong điều kiện khó khăn", "Không", "Chỉ ở nước ngoài"],
-        a: 0,
-      },
-      {
-        q: "Đạo Chiên đóng góp vào điều gì?",
-        options: ["Phong trào giải phóng dân tộc", "Không đóng góp", "Chỉ tôn giáo"],
-        a: 0,
+        q: "Ở cấp độ quốc gia, biểu hiện đỉnh cao của sự hội tụ đoàn kết thống nhất cộng đồng dân tộc của người Việt Nam dưới dạng tín ngưỡng là gì?",
+        options: [
+          "Thờ cúng các vị thần tự nhiên.",
+          "Thờ các anh hùng dân tộc.",
+          "Hướng về cội nguồn dân tộc chung - nơi các Vua Hùng đã có công dựng nước - thể hiện lòng tôn kính, niềm tự hào dân tộc.",
+          "Duy trì các lễ hội làng xã truyền thống."
+        ],
+        a: 2,
       },
     ],
   },

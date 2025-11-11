@@ -1,19 +1,9 @@
 export const congGiaoData = [
   {
     id: 1,
-    title: "Công giáo trong thời kỳ đổi mới",
+    title: "Sau năm 1975'",
     year: "Giai đoạn 1986 – nay",
-    description: `Từ Đổi mới (1986), Công giáo Việt Nam phát triển trong bối cảnh hội nhập:
-
-Hoạt động nổi bật:
-
-Xây dựng và trùng tu nhiều nhà thờ, tu viện trên cả nước.
-
-Mở rộng hoạt động giáo dục: Thành lập các trường học Công giáo.
-
-Tăng cường hoạt động từ thiện xã hội, chăm sóc người nghèo, trẻ em mồ côi.
-
-Tham gia tích cực vào các phong trào xã hội, bảo vệ môi trường.`,
+    description: `Sau khi đất nước thống nhất, hoạt động của Giáo hội Công giáo Việt Nam gặp nhiều khó khăn: nhiều cơ sở bị thu hồi, sinh hoạt tôn giáo bị hạn chế, một số linh mục và giáo dân bị quản lý hoặc di dời. Thời kỳ này, Giáo hội chủ yếu duy trì đức tin trong âm thầm và kiên trì.`,
     questions: [
       {
         q: "Công giáo tham gia tích cực vào lĩnh vực nào sau Đổi mới?",
@@ -34,17 +24,9 @@ Tham gia tích cực vào các phong trào xã hội, bảo vệ môi trường.
   },
   {
     id: 2,
-    title: "Hội đồng Giám mục Việt Nam được thành lập",
+    title: "Hướng đổi mới",
     year: "Cột mốc 1980",
-    description: `Năm 1980: Hội đồng Giám mục Việt Nam chính thức được thành lập.
-
-Ý nghĩa:
-
-Đánh dấu bước phát triển mới của Công giáo Việt Nam.
-
-Tăng cường sự đoàn kết giữa các giáo phận trong cả nước.
-
-Vai trò: Điều phối các hoạt động mục vụ, định hướng cho cộng đồng Công giáo Việt Nam.`,
+    description: `Năm 1980, Hội đồng Giám mục Việt Nam ra văn kiện mục vụ với định hướng “Sống Tin Mừng trong lòng dân tộc”, khẳng định tinh thần hòa nhập, gắn bó với Tổ quốc và đồng hành cùng dân tộc trong công cuộc xây dựng xã hội mới theo định hướng xã hội chủ nghĩa.`,
     questions: [
       {
         q: "Hội đồng Giám mục Việt Nam được thành lập năm nào?",
@@ -65,15 +47,9 @@ Vai trò: Điều phối các hoạt động mục vụ, định hướng cho c�
   },
   {
     id: 3,
-    title: "Công giáo sau thống nhất đất nước",
+    title: "Phục hồi và phát triển sau Đổi mới",
     year: "Giai đoạn 1975 – 1980",
-    description: `Sau 1975, đất nước thống nhất, Công giáo Việt Nam điều chỉnh hoạt động:
-
-Giai đoạn khó khăn nhưng vẫn duy trì sinh hoạt tôn giáo.
-
-Nhiều linh mục, tu sĩ tiếp tục phục vụ cộng đồng.
-
-Bắt đầu xây dựng mối quan hệ với Nhà nước trong bối cảnh mới.`,
+    description: `Từ đầu thập niên 1990, Giáo hội Công giáo Việt Nam dần phục hồi mạnh mẽ: nhiều nhà thờ, giáo xứ được xây dựng lại, số lượng linh mục và tín hữu tăng nhanh. Giáo hội mở rộng hoạt động giáo dục, bác ái và đóng góp tích cực trong thời kỳ hội nhập quốc tế.`,
     questions: [
       {
         q: "Sau 1975, Công giáo Việt Nam có tiếp tục sinh hoạt không?",
@@ -94,61 +70,119 @@ Bắt đầu xây dựng mối quan hệ với Nhà nước trong bối cảnh m
   },
   {
     id: 4,
-    title: "Công giáo trong hai miền chia cắt",
+    title: "Nguyên tắc 1 & 2 (Giải quyết vấn đề Tôn giáo)",
     year: "Giai đoạn 1954 – 1975",
-    description: `Miền Bắc:
-• Công giáo hoạt động trong điều kiện hạn chế.
-• Một số giáo dân di cư vào miền Nam năm 1954.
-
-Miền Nam:
-• Công giáo phát triển mạnh mẽ với nhiều giáo phận, nhà thờ.
-• Tham gia tích cực vào đời sống xã hội, giáo dục, y tế.`,
+    color: "#48c9b0", // Màu xanh dương sáng
+    description: `Trong Nguyên tắc cơ bản là Tôn trọng, bảo đảm quyền tự do tín ngưỡng và không tín ngưỡng của nhân dân. Thứ hai là Khắc phục dần những ảnh hưởng tiêu cực của tôn giáo phải gắn liền với quá trình cải tạo xã hội cũ, xây dựng xã hội mới, nhằm xóa bỏ nguồn gốc sinh ra ảo tưởng tôn giáo (như áp bức, bất công, nghèo đói)`,
     questions: [
       {
-        q: "Năm 1954, một số giáo dân di cư về đâu?",
-        options: ["Miền Nam", "Miền Bắc", "Nước ngoài"],
+        q: "Nguyên tắc đầu tiên và cơ bản của chủ nghĩa Mác - Lênin trong giải quyết vấn đề tôn giáo là gì?",
+        options: [
+          "Khắc phục dần những ảnh hưởng tiêu cực của tôn giáo.",
+          "Tôn trọng và bảo đảm quyền tự do tín ngưỡng, theo hoặc không theo tôn giáo của nhân dân.",
+          "Phân biệt hai mặt chính trị và tư tưởng của tôn giáo.",
+          "Quan điểm lịch sử cụ thể trong giải quyết vấn đề tín ngưỡng, tôn giáo."
+        ],
+        a: 1,
+      },
+      {
+        q: "Nguyên tắc nào khẳng định rằng muốn xóa bỏ ảo tưởng tôn giáo, trước hết phải xác lập được một thế giới hiện thực không có áp bức, bất công, nghèo đói và thất học?",
+        options: [
+          "Tôn trọng quyền tự do tín ngưỡng.",
+          "Khắc phục dần những ảnh hưởng tiêu cực của tôn giáo phải gắn liền với quá trình cải tạo xã hội cũ, xây dựng xã hội mới.",
+          "Phân biệt hai mặt chính trị và tư tưởng của tôn giáo.",
+          "Quan điểm lịch sử cụ thể."
+        ],
+        a: 1,
+      },
+      {
+        q: "Theo nguyên tắc giải quyết vấn đề tôn giáo của chủ nghĩa Mác - Lênin, điều cần thiết trước hết để xóa bỏ ảo tưởng nảy sinh trong tư tưởng con người là gì?",
+        options: [
+          "Phải xoá bỏ nguồn gốc sinh ra ảo tưởng ấy (áp bức, bất công, nghèo đói...).",
+          "Phải tăng cường trấn áp những hoạt động tôn giáo trái phép.",
+          "Phải tăng cường giáo dục thế giới quan duy vật biện chứng.",
+          "Phải cấm đoán các hành vi theo đạo, truyền đạo."
+        ],
         a: 0,
       },
       {
-        q: "Công giáo miền Nam tham gia vào lĩnh vực nào?",
-        options: ["Xã hội, giáo dục, y tế", "Chỉ tôn giáo", "Quân sự"],
-        a: 0,
-      },
-      {
-        q: "Công giáo miền Nam phát triển như thế nào?",
-        options: ["Mạnh mẽ", "Suy yếu", "Không hoạt động"],
+        q: "Trong quá trình giải quyết vấn đề tôn giáo, việc phân biệt hai mặt chính trị và tư tưởng của tôn giáo nhằm mục đích gì?",
+        options: [
+          "Nhằm tránh khuynh hướng cực đoan trong quá trình quản lý, ứng xử những vấn đề liên quan đến tín ngưỡng, tôn giáo.",
+          "Nhằm đối phó với những thế lực lợi dụng tôn giáo chống lại cách mạng.",
+          "Nhằm khẳng định sự khác biệt giữa niềm tin và hành động.",
+          "Nhằm khẳng định tính chất duy tâm của tôn giáo."
+        ],
         a: 0,
       },
     ],
   },
   {
     id: 5,
-    title: "Công giáo trong kháng chiến chống Pháp",
+    title: "Nguyên tắc 3 & 4 (Giải quyết vấn đề Tôn giáo)",
     year: "Giai đoạn 1945 – 1954",
-    description: `Bối cảnh: Cách mạng Tháng Tám thành công, cuộc kháng chiến chống Pháp bắt đầu.
-
-Hoạt động:
-
-Nhiều giáo dân, linh mục yêu nước tham gia kháng chiến.
-
-Một số giáo xứ ủng hộ phong trào giải phóng dân tộc.
-
-Công giáo Việt Nam có nhiều xu hướng khác nhau trong thời kỳ này.`,
+    color: "#48c9b0", // Màu xanh ngọc (turquoise)
+    description: `Cần Phân biệt hai mặt chính trị và tư tưởng của tôn giáo (chính trị: mâu thuẫn đối kháng; tư tưởng: mâu thuẫn không đối kháng), nhằm tránh khuynh hướng cực đoan trong quản lý. Đồng thời, áp dụng Quan điểm lịch sử cụ thể vì vai trò và tác động của mỗi tôn giáo khác nhau ở từng thời kỳ lịch sử`,
     questions: [
       {
-        q: "Cách mạng Tháng Tám thành công năm nào?",
-        options: ["1945", "1954", "1946"],
-        a: 0,
+        q: "Mặt chính trị của tôn giáo thường phản ánh loại mâu thuẫn nào?",
+        options: [
+          "Mâu thuẫn không mang tính đối kháng.",
+          "Mâu thuẫn giữa những người có tín ngưỡng và người không theo tôn giáo.",
+          "Mâu thuẫn đối kháng về lợi ích kinh tế, chính trị giữa các giai cấp.",
+          "Mâu thuẫn giữa tín đồ và chức sắc tôn giáo."
+        ],
+        a: 2,
       },
       {
-        q: "Ai tham gia kháng chiến chống Pháp?",
-        options: ["Giáo dân và linh mục yêu nước", "Không ai", "Chỉ người ngoài"],
-        a: 0,
+        q: "Mặt tư tưởng của tôn giáo thường phản ánh loại mâu thuẫn nào?",
+        options: [
+          "Mâu thuẫn đối kháng.",
+          "Mâu thuẫn không mang tính đối kháng, biểu hiện sự khác nhau về niềm tin, mức độ tín.",
+          "Mâu thuẫn giữa tiến bộ và phản tiến bộ.",
+          "Mâu thuẫn giữa các tôn giáo nội sinh và tôn giáo ngoại nhập."
+        ],
+        a: 1,
       },
       {
-        q: "Một số giáo xứ ủng hộ phong trào nào?",
-        options: ["Giải phóng dân tộc", "Thực dân Pháp", "Không ủng hộ ai"],
-        a: 0,
+        q: "Tại sao cần phải có 'Quan điểm lịch sử cụ thể' trong giải quyết vấn đề tín ngưỡng, tôn giáo?",
+        options: [
+          "Vì tôn giáo là một hiện tượng xã hội bất biến.",
+          "Vì mỗi tôn giáo đều có lịch sử hình thành và quá trình tồn tại nhất định, vai trò, tác động của từng tôn giáo đối với đời sống xã hội không giống nhau ở những thời kỳ lịch sử khác nhau.",
+          "Vì phải luôn phân biệt hai mặt chính trị và tư tưởng.",
+          "Vì phải áp dụng chung một chính sách đối với mọi tôn giáo."
+        ],
+        a: 1,
+      },
+      {
+        q: "Tính đến thời điểm trong nguồn tài liệu, Việt Nam có bao nhiêu tổ chức thuộc các tôn giáo đã được công nhận và cấp đăng ký hoạt động?",
+        options: [
+          "54 tổ chức.",
+          "39 tổ chức.",
+          "43 tổ chức thuộc 16 tôn giáo.",
+          "Gần 200 tổ chức."
+        ],
+        a: 2,
+      },
+      {
+        q: "Về phương diện thế giới quan, các tôn giáo được chủ nghĩa Mác - Lênin đánh giá như thế nào?",
+        options: [
+          "Các tôn giáo mang thế giới quan duy vật biện chứng.",
+          "Các tôn giáo mang thế giới quan duy tâm.",
+          "Các tôn giáo đều phù hợp với chủ nghĩa Mác - Lênin.",
+          "Các tôn giáo luôn có thái độ xem thường khoa học."
+        ],
+        a: 1,
+      },
+      {
+        q: "Trong giai đoạn hiện nay ở Việt Nam, hàng ngũ chức sắc các tôn giáo có vai trò và vị trí như thế nào?",
+        options: [
+          "Không có vai trò gì ngoài sinh hoạt tôn giáo thuần túy.",
+          "Có vai trò, vị trí quan trọng trong giáo hội, có uy tín, ảnh hưởng với tín đồ.",
+          "Chỉ có vai trò ở các cơ sở thờ tự mà thôi.",
+          "Luôn chống đối lại đường lối, chính sách của Nhà nước."
+        ],
+        a: 1,
       },
     ],
   },

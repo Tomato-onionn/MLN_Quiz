@@ -96,6 +96,7 @@ Tham gia các phong trào thi đua yêu nước.`,
     id: 4,
     title: "Đạo Hòa Hảo trong kháng chiến chống Mỹ",
     year: "Giai đoạn 1954 – 1975",
+    color: "#5dade2", // Màu xanh dương sáng
     description: `Giai đoạn kháng chiến chống Mỹ:
 
 Một bộ phận tín đồ ủng hộ cách mạng.
@@ -125,6 +126,7 @@ Sau 1975, hòa nhập vào cuộc sống mới.`,
     id: 5,
     title: "Đạo Hòa Hảo ra đời và phát triển",
     year: "Giai đoạn 1939 – 1954",
+    color: "#48c9b0", // Màu xanh ngọc (turquoise)
     description: `Năm 1939: Đạo Hòa Hảo do Huỳnh Phú Sổ sáng lập tại An Giang.
 
 Đặc điểm:

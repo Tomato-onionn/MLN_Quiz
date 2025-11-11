@@ -168,8 +168,18 @@ function TimelinePage({
               >
                 <div className="milestone-content-wrapper">
                   <div className="milestone-content milestone-content-hidden">
-                    <span className="milestone-year">{milestone.year}</span>
-                    <h3 className="milestone-title">{milestone.title}</h3>
+                    <span
+                      className="milestone-year"
+                      style={milestone.color ? { color: milestone.color } : {}}
+                    >
+                      {milestone.year}
+                    </span>
+                    <h3
+                      className="milestone-title"
+                      style={milestone.color ? { color: milestone.color } : {}}
+                    >
+                      {milestone.title}
+                    </h3>
                     <p className="milestone-description">
                       {milestone.description}
                     </p>
@@ -182,8 +192,22 @@ function TimelinePage({
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     >
-                      <span className="milestone-year">{milestone.year}</span>
-                      <h3 className="milestone-title">{milestone.title}</h3>
+                      <span
+                        className="milestone-year"
+                        style={
+                          milestone.color ? { color: milestone.color } : {}
+                        }
+                      >
+                        {milestone.year}
+                      </span>
+                      <h3
+                        className="milestone-title"
+                        style={
+                          milestone.color ? { color: milestone.color } : {}
+                        }
+                      >
+                        {milestone.title}
+                      </h3>
                       <p className="milestone-description">
                         {milestone.description}
                       </p>
