@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+﻿import { useState, useRef } from "react";
 import { motion as Motion } from "framer-motion";
 import TimelinePage from "./TimelinePage";
 import FinalPage from "./FinalPage";
@@ -12,17 +12,41 @@ function App() {
   const [page1Completed, setPage1Completed] = useState(false);
   const [page2Completed, setPage2Completed] = useState(false);
   const [page3Completed, setPage3Completed] = useState(false);
+  const [earnedBadge, setEarnedBadge] = useState(null);
+  const [showEarned, setShowEarned] = useState(false);
+
+  const badge1Shown = useRef(false);
+  const badge2Shown = useRef(false);
+  const badge3Shown = useRef(false);
 
   const handlePage1Complete = () => {
-    setPage1Completed(true);
+    if (!page1Completed && !badge1Shown.current) {
+      badge1Shown.current = true;
+      setPage1Completed(true);
+      setEarnedBadge("/1.png");
+      setShowEarned(true);
+      setTimeout(() => setShowEarned(false), 2500);
+    }
   };
 
   const handlePage2Complete = () => {
-    setPage2Completed(true);
+    if (!page2Completed && !badge2Shown.current) {
+      badge2Shown.current = true;
+      setPage2Completed(true);
+      setEarnedBadge("/2.png");
+      setShowEarned(true);
+      setTimeout(() => setShowEarned(false), 2500);
+    }
   };
 
   const handlePage3Complete = () => {
-    setPage3Completed(true);
+    if (!page3Completed && !badge3Shown.current) {
+      badge3Shown.current = true;
+      setPage3Completed(true);
+      setEarnedBadge("/3.png");
+      setShowEarned(true);
+      setTimeout(() => setShowEarned(false), 2500);
+    }
   };
 
   const goToPage = (pageName) => {
@@ -37,13 +61,78 @@ function App() {
 
   return (
     <>
+      {showEarned && earnedBadge && (
+        <Motion.div
+          className="earned-overlay"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.15 }}
+          style={{
+            position: "fixed",
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 2000,
+            pointerEvents: "none",
+            background: "transparent",
+          }}
+        >
+          <Motion.div
+            className="earned-modal"
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            style={{
+              padding: 20,
+              textAlign: "center",
+              minWidth: 240,
+              background: "transparent",
+            }}
+          >
+            <h3
+              style={{
+                margin: 0,
+                marginBottom: 8,
+                color: "#fff",
+                textShadow: "0 2px 8px rgba(0,0,0,0.8)",
+                fontSize: "1.8rem",
+                background: "transparent",
+              }}
+            >
+              🎉 Chúc mừng!
+            </h3>
+            <p
+              style={{
+                margin: 0,
+                marginBottom: 12,
+                color: "#fff",
+                textShadow: "0 2px 8px rgba(0,0,0,0.8)",
+                fontSize: "1.1rem",
+                background: "transparent",
+              }}
+            >
+              Bạn nhận được 1 thẻ
+            </p>
+            <img
+              src={earnedBadge}
+              alt="earned"
+              style={{
+                width: 120,
+                filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.5))",
+                background: "transparent",
+              }}
+            />
+          </Motion.div>
+        </Motion.div>
+      )}
       {currentPage === "phatgiao" && (
         <>
           <TimelinePage
             milestones={phatGiaoData}
             bgImage="/PhatGiao.png"
             badgeImage="/1.png"
-            footerText="Group 7"
+            footerText="Namo Amitabha Buddha              "
             onComplete={handlePage1Complete}
           />
 
