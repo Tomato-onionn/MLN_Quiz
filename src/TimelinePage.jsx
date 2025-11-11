@@ -16,6 +16,8 @@ function TimelinePage({
   const [consecutiveCorrect, setConsecutiveCorrect] = useState(0);
   const [unlockedIndex, setUnlockedIndex] = useState(0);
   const [completedSet, setCompletedSet] = useState(new Set());
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [showResult, setShowResult] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,30 +91,45 @@ function TimelinePage({
     setQuizOpen(false);
     setActiveMilestoneIndex(null);
     setCurrentQuestionIndex(0);
+    setSelectedAnswer(null);
+    setShowResult(false);
   };
 
   const handleAnswer = (choiceIndex) => {
+    if (showResult) return; // Không cho click nếu đã hiển thị kết quả
+
     const ms = milestones[activeMilestoneIndex];
     const q = ms.questions[currentQuestionIndex];
+
+    setSelectedAnswer(choiceIndex);
+    setShowResult(true);
+
     if (choiceIndex === q.a) {
-      const nextQuestion = currentQuestionIndex + 1;
-      setConsecutiveCorrect((c) => c + 1);
-      if (nextQuestion < ms.questions.length) {
-        setCurrentQuestionIndex(nextQuestion);
-      } else {
-        if (unlockedIndex < milestones.length - 1) {
-          setUnlockedIndex((i) => i + 1);
+      // Đúng: đợi 1 giây rồi chuyển câu hoặc đóng
+      setTimeout(() => {
+        const nextQuestion = currentQuestionIndex + 1;
+        setConsecutiveCorrect((c) => c + 1);
+        if (nextQuestion < ms.questions.length) {
+          setCurrentQuestionIndex(nextQuestion);
+          setSelectedAnswer(null);
+          setShowResult(false);
+        } else {
+          if (unlockedIndex < milestones.length - 1) {
+            setUnlockedIndex((i) => i + 1);
+          }
+          setCompletedSet((s) => {
+            const n = new Set(s);
+            n.add(activeMilestoneIndex);
+            return n;
+          });
+          closeQuiz();
         }
-        setCompletedSet((s) => {
-          const n = new Set(s);
-          n.add(activeMilestoneIndex);
-          return n;
-        });
-        closeQuiz();
-      }
+      }, 1000);
     } else {
-      // Trả lời sai: chỉ đóng quiz và làm lại mốc này
-      closeQuiz();
+      // Sai: đợi 1.5 giây rồi đóng quiz
+      setTimeout(() => {
+        closeQuiz();
+      }, 1500);
     }
   };
 
@@ -277,15 +294,30 @@ function TimelinePage({
             <div className="quiz-options">
               {milestones[activeMilestoneIndex].questions[
                 currentQuestionIndex
-              ].options.map((opt, i) => (
-                <button
-                  key={i}
-                  className="quiz-option"
-                  onClick={() => handleAnswer(i)}
-                >
-                  {opt}
-                </button>
-              ))}
+              ].options.map((opt, i) => {
+                const correctAnswer =
+                  milestones[activeMilestoneIndex].questions[
+                    currentQuestionIndex
+                  ].a;
+                const isCorrect = i === correctAnswer;
+                const isSelected = i === selectedAnswer;
+
+                let buttonClass = "quiz-option";
+                if (showResult && isSelected) {
+                  buttonClass += isCorrect ? " correct" : " incorrect";
+                }
+
+                return (
+                  <button
+                    key={i}
+                    className={buttonClass}
+                    onClick={() => handleAnswer(i)}
+                    disabled={showResult}
+                  >
+                    {opt}
+                  </button>
+                );
+              })}
             </div>
             <div className="quiz-footer">
               <small>Trả lời đúng liên tiếp: {consecutiveCorrect}</small>
